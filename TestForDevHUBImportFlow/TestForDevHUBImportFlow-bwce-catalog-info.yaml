@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TestForDevHUBImportFlow
+  description: ''
+  tags:
+    - bwce
+  links:
+    - title: TIBCO Business Works
+      url: https://www.tibco.com/products/tibco-businessworks
+  annotations:
+    github.com/project-slug: https://github.com/yonghun7/ImportFlowsRepo
+spec:
+  type: bwce
+  lifecycle: production
+  owner: group:default/tibco-imported
