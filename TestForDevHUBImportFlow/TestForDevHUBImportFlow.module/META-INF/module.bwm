@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="__xt64HvbEe-AMecijirpfA" targetNamespace="http://tns.tibco.com/bw/composite/TestForDevHUBImportFlow.module" name="TestForDevHUBImportFlow.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_LI4AYHvcEe-AMecijirpfA" name="testUri" promote="ComponentProcess/testUri">
+    <sca:interface.wsdl xmi:id="_LI-uEHvcEe-AMecijirpfA" interface="http://xmlns.example.com/20240926075029PLT#wsdl.interface(testUri)" scaext:wsdlLocation="../Processes/testfordevhubimportflow/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_LJIfEHvcEe-AMecijirpfA" name="RestService" path="/testUri" docBasePath="http://localhost:7777/TestForDevHUBImportFlow.module" docResourcePath="test" basePath="/" connector="testfordevhubimportflow.module.test" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/testfordevhubimportflow.module.Process-test.json">
+      <operation xmi:id="_LJRB8HvcEe-AMecijirpfA" operationName="get" nickname="get-testUri" httpMethod="GET" notes="getTest" responseStyle="element" outputPartName="output">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_LLl9MHvcEe-AMecijirpfA"/>
+      <advancedConfig xmi:id="_LJPMwHvcEe-AMecijirpfA" blockingQueueSize="8192"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_LJRB8XvcEe-AMecijirpfA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_A4920HvcEe-AMecijirpfA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5O8kHvcEe-AMecijirpfA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5WRUHvcEe-AMecijirpfA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5cX8HvcEe-AMecijirpfA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5h3gHvcEe-AMecijirpfA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5nXEHvcEe-AMecijirpfA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5s2oHvcEe-AMecijirpfA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A5xvIHvcEe-AMecijirpfA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_A52AkHvcEe-AMecijirpfA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_Aeao0HvcEe-AMecijirpfA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_AebP4HvcEe-AMecijirpfA" processName="testfordevhubimportflow.module.Process"/>
+    <sca:service xmi:id="_LIx5wHvcEe-AMecijirpfA" name="testUri">
+      <sca:interface.wsdl xmi:id="_LIyg0HvcEe-AMecijirpfA" interface="http://xmlns.example.com/20240926075029PLT#wsdl.interface(testUri)" scaext:wsdlLocation="../Processes/testfordevhubimportflow/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
